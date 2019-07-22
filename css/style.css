@@ -1,14 +1,97 @@
+* {
+  box-sizing: border-box;
+}
 
-#navbar{
+#navbar {
   position: fixed;
   top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: black;
+  padding: 5px;
+  width: 98.7%;
+}
+@media screen and (max-width: 600px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#navlink a {
+  list-style-type: none;
+}
+
+#navlink li {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0 15px;
+  font-size: 18px;
 }
 
 #welcome-section {
-  height: 100vh;
+height: 100vh;
+background: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+background-size: cover;
+padding: 5px;
 }
 
+#welcome-section h1 {
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
 
-@media screen and (max-width: 600px) {
+.project-tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 400px;
+}
 
+.project-image {
+  height: 250px;
+  width: 300px;
+  margin: 30px;
+}
+
+.profile-section {
+  height: 300px;
+  background-color: rgba(150, 56, 50);
+  margin-top: 0;
+  padding: 10px;
+}
+
+.profile-section > p {
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  top: 110px;
+  font-weight: bold;
+}
+.profile-section a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: 130px;
+  text-align: center;
+}
+.icon {
+  position: relative;
+  top: 60px;
+  left: 610px;
+}
+
+footer {
+  background-color: black;
+  padding: 15px;
+}
+footer p {
+  color: white;
+  text-align: center;
 }
